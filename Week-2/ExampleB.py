@@ -7,7 +7,7 @@ def main():
     operation = number / anotherNumber
 
     # round(number, decimal places)
-    print(f"The division of {number} / {anotherNumber} is {round(operation, 3)}")
+    print(f"The division of{{}} {number} / {anotherNumber} is {round(operation, 3)}")
 
     # 2 power of 10
     power = pow(2, 10)  # pow(base, exponent)
