@@ -16,7 +16,7 @@ def main():
     # position = (0, 0)
     color_red = (255, 0, 0)
 
-    r1 = pygame.Rect(250, 50, 50, 50)
+    r1 = pygame.Rect(250, 250, 50, 50)
     dimension = (r1.width, r1.height)
     s1 = pygame.Surface(dimension)
     s1.fill(color_red)
@@ -37,8 +37,8 @@ def main():
         # Add surfaces/rect into the screen here
         screen.blit(s1, (r1.x, r1.y))
 
-        r1.x += 1
-        r1.y += 1
+        # Use the move method to move a rect.
+        r1 = r1.move(-1, -1)
 
         # Update screen and set the frame rate
         pygame.display.flip()
